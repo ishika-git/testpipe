@@ -11,6 +11,6 @@ pipeline{
               }}
      stage('Deployment'){
          steps{
-                'cp target/testpipe.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.85/webapps'
+                sh 'cp target/testpipe.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.85/webapps'
               }}
 }}
